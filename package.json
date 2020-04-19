@@ -1,0 +1,33 @@
+{
+  "name": "fast-food-api",
+  "version": "1.0.0",
+  "description": "API that powers Fast-food-fast UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./build/app.js",
+    "start:dev": "nodemon src/app.js --exec babel-node --presets babel-preset-env",
+    "build": "babel -d ./build ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/St80ene/fast-food-api.git"
+  },
+  "author": "Etiene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/St80ene/fast-food-api/issues"
+  },
+  "homepage": "https://github.com/St80ene/fast-food-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.3"
+  }
+}
